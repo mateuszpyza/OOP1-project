@@ -1,14 +1,13 @@
 package apps;
 
-import models.CinemaSeats;
+import models.CinemaSeat;
 
 public class Main {
-    public static void main(String[]args){
-         CinemaSeats chair1=new CinemaSeats(1,1,true);
-        System.out.println("Numer miejsca: "+chair1.seatNumber +" rząd: "+chair1.rowNumber+" wolne: "+chair1.occupiedSeats);
-        CinemaSeats chair2=new CinemaSeats(2,1,false);
-        System.out.println("Numer miejsca: "+chair2.seatNumber +" rząd: "+chair2.rowNumber+" wolne: "+chair2.occupiedSeats);
-        chair1.occupiedSeats=false;
-        System.out.println("Numer miejsca: "+chair1.seatNumber +" rząd: "+chair1.rowNumber+" wolne: "+chair1.occupiedSeats);
+    public static void main(String[] args) {
+        CinemaSeat chair1 = new CinemaSeat(1, 1);
+        System.out.println(chair1.isOccupied);
+        chair1.isOccupied = true;
+        System.out.println(chair1.isOccupied);
+
     }
 }
