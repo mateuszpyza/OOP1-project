@@ -1,10 +1,10 @@
 package models;
 
 public class Movie {
-    protected final String title;
-    protected  final String directorName;
-    protected  final  double durationInMinutes;
-    protected final int yearOfProduction;
+    private final String title;
+    private  final String directorName;
+    private  final  double durationInMinutes;
+    private final int yearOfProduction;
 
     public Movie(String title, String directorName, double durationInMinutes, int yearOfProduction) {
         this.title = title;
