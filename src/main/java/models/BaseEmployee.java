@@ -1,15 +1,14 @@
 package models;
 
-public class BaseEmployee {
-    protected final String firstName;
-    protected final String surname;
-    protected double baseSalary;
-    protected final int yearOfEmployment;
+public abstract class BaseEmployee {
+    private final String firstName;
+    private final String surname;
+    protected static double baseSalary=3000;
+    private final int yearOfEmployment;
 
     public BaseEmployee(String firstName, String surname, int yearOfEmployment) {
         this.firstName = firstName;
         this.surname = surname;
-        this.baseSalary = 3000;
         this.yearOfEmployment = yearOfEmployment;
     }
 
@@ -29,9 +28,10 @@ public class BaseEmployee {
         return currentYear - yearOfEmployment;
     }
 
-    public double CalculateMonthlySalary() {
-        return baseSalary;
-    }
+    public abstract double calculateMonthlySalary();
+
+
+
 
 }
 
