@@ -1,9 +1,9 @@
 package models;
 
 public abstract class BaseEmployee {
+    private static final double BASE_SALARY = 3000;
     private final String firstName;
     private final String surname;
-    private static final double BASE_SALARY = 3000;
     private double baseSalary;
     private final int yearOfEmployment;
 
