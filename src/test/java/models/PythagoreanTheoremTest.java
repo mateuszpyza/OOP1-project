@@ -7,8 +7,34 @@ import org.junit.jupiter.api.Test;
 
 class PythagoreanTheoremTest {
 
-    @org.junit.jupiter.api.Test
-    void isRectangularTriangle() {
+    @Test
+    void shouldBeRectangularLongestA() {
+        //given
+        double a = 5;
+        double b = 4;
+        double c = 3;
+        //when
+        boolean result = PythagoreanTheorem.isRectangularTriangle(a, b, c);
+        //then
+        Assertions.assertTrue(result);
+
+
+    }
+    @Test
+    void shouldBeRectangularLongestB() {
+        //given
+        double a = 3;
+        double b = 5;
+        double c = 4;
+        //when
+        boolean result = PythagoreanTheorem.isRectangularTriangle(a, b, c);
+        //then
+        Assertions.assertTrue(result);
+
+
+    }
+    @Test
+    void shouldBeRectangularLongestC() {
         //given
         double a = 3;
         double b = 4;
@@ -18,10 +44,11 @@ class PythagoreanTheoremTest {
         //then
         Assertions.assertTrue(result);
 
+
     }
 
     @Test
-    void isNotRectangularTriangle() {
+    void shouldBeNotRectangular() {
         //given
         double a = 2.5;
         double b = 4;
@@ -33,7 +60,7 @@ class PythagoreanTheoremTest {
     }
 
     @Test
-    void isNotTriangle() {
+    void shouldBeNotTriangle() {
         //given
         double a = 10;
         double b = 4;

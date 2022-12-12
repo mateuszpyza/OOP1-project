@@ -15,7 +15,6 @@ public class PythagoreanTheorem {
                 return false;
             }
         } else {
-            System.out.println("To nie jest trójkąt!!!");
             return false;
         }
     }
