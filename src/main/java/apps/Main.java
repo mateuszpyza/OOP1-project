@@ -23,7 +23,6 @@ public class Main {
         System.out.println("Sprzedawca biletów pracuje: " + TicketSeller1.getYearsOfWork() + " lat.");
         System.out.println("Pensja sprzedawcy biletów wynosi : " + TicketSeller1.calculateMonthlySalary());
 
-        Manager Manager2 = new Manager("Mateusz", "Ryś", 10000, 1939);
     }
 
 }
