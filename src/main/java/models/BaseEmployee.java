@@ -7,18 +7,16 @@ public abstract class BaseEmployee {
     private double baseSalary;
     private final int yearOfEmployment;
 
-    public BaseEmployee(String firstName, String surname, int yearOfEmployment) {
-        this.firstName = firstName;
-        this.surname = surname;
-        this.yearOfEmployment = yearOfEmployment;
-        this.baseSalary = BASE_SALARY;
-    }
 
     public BaseEmployee(String firstName, String surname, double baseSalary, int yearOfEmployment) {
         this.firstName = firstName;
         this.surname = surname;
         this.baseSalary = baseSalary;
         this.yearOfEmployment = yearOfEmployment;
+    }
+
+    public BaseEmployee(String firstName, String surname, int yearOfEmployment) {
+        this(firstName, surname, BASE_SALARY, yearOfEmployment);
     }
 
     public double getBaseSalary() {

@@ -19,7 +19,7 @@ public class Main {
         System.out.println("Pensja managera wynosi: " + Manager1.calculateMonthlySalary());
 
         TicketSeller TicketSeller1 = new TicketSeller("Sebek", "BąK", 2019);
-        //System.out.println("Pensja podstawowa sprzedawcy biletów wynosi : "+TicketSeller1.getBaseSalary());
+        System.out.println("Pensja podstawowa sprzedawcy biletów wynosi : "+TicketSeller1.getBaseSalary()+'\n');
         System.out.println("Sprzedawca biletów pracuje: " + TicketSeller1.getYearsOfWork() + " lat.");
         System.out.println("Pensja sprzedawcy biletów wynosi : " + TicketSeller1.calculateMonthlySalary());
 
