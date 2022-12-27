@@ -1,13 +1,13 @@
 package apps;
 
-import models.BigLetters;
-import models.SmallLetters;
+import models.ToUpperCaseConverter;
+import models.ToLowerCaseConverter;
 
 public class Main {
     public static void main(String[] args) {
-        BigLetters bigLetters = new BigLetters();
-        SmallLetters smallLetters = new SmallLetters();
+        ToUpperCaseConverter bigLetters = new ToUpperCaseConverter();
+        ToLowerCaseConverter smallLetters = new ToLowerCaseConverter();
         System.out.println(bigLetters.formatText("dObRzE IdZiE cHyBa, NiE?"));
-        System.out.println(smallLetters.formatText("dObRzE IdZiE cHyBa, NiE?"));
+        System.out.println(smallLetters.formatText(null));
     }
 }
